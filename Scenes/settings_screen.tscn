@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://qyyp27honl1e"]
+
+[ext_resource type="Texture2D" uid="uid://c6tjn21rrketk" path="res://Backdrops/settings.jpg" id="1_85ujs"]
+
+[node name="Node2D" type="Node2D" unique_id=1230663064]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1355682494]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.3600004, 1.8000004)
+texture = ExtResource("1_85ujs")
