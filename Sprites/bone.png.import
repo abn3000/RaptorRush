@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://l6f7kvynej0o"
-path="res://.godot/imported/level.jpeg-f91e7bc07c477dec9894ffadf1ee48f3.ctex"
+uid="uid://tri4ods5671"
+path="res://.godot/imported/bone.png-0748b315ef61470f8ad10451b93f8534.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Backdrops/level.jpeg"
-dest_files=["res://.godot/imported/level.jpeg-f91e7bc07c477dec9894ffadf1ee48f3.ctex"]
+source_file="res://Sprites/bone.png"
+dest_files=["res://.godot/imported/bone.png-0748b315ef61470f8ad10451b93f8534.ctex"]
 
 [params]
 

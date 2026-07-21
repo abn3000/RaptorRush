@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://23j13f1gcwx0"]
+
+[ext_resource type="Script" uid="uid://bdr0eou6c656c" path="res://Scripts/minigame_2.gd" id="1_dfb65"]
+[ext_resource type="Texture2D" uid="uid://etxy7x7xdltn" path="res://Backdrops/platformer.jpg" id="2_rfxq2"]
+[ext_resource type="Script" uid="uid://b5261vftkdxqv" path="res://Scripts/button_1.gd" id="3_mmgun"]
+[ext_resource type="Texture2D" uid="uid://tri4ods5671" path="res://Sprites/bone.png" id="3_rfxq2"]
+[ext_resource type="PackedScene" uid="uid://khaugr8s4trv" path="res://Scenes/themed_timer.tscn" id="4_h684j"]
+
+[node name="minigame_2" type="Node2D" unique_id=1564364431]
+script = ExtResource("1_dfb65")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=391860701]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="Parallax2D" unique_id=937209407]
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.60000026, 0.60000026)
+texture = ExtResource("2_rfxq2")
+
+[node name="Button_1" type="TextureButton" parent="." unique_id=1735470246]
+offset_left = 22.0
+offset_top = 421.0
+offset_right = 278.0
+offset_bottom = 677.0
+scale = Vector2(0.7527525, 0.7632993)
+texture_normal = ExtResource("3_rfxq2")
+script = ExtResource("3_mmgun")
+
+[node name="Button_2" type="TextureButton" parent="." unique_id=89036283]
+offset_left = 889.0
+offset_top = 230.0
+offset_right = 1145.0
+offset_bottom = 486.0
+scale = Vector2(0.7527525, 0.7632993)
+texture_normal = ExtResource("3_rfxq2")
+script = ExtResource("3_mmgun")
+
+[node name="Button_3" type="TextureButton" parent="." unique_id=1032979679]
+offset_left = 439.0
+offset_top = 356.0
+offset_right = 695.0
+offset_bottom = 612.0
+scale = Vector2(0.7527525, 0.7632993)
+texture_normal = ExtResource("3_rfxq2")
+script = ExtResource("3_mmgun")
+
+[node name="Button_4" type="TextureButton" parent="." unique_id=1729669191]
+offset_left = 358.0
+offset_top = 15.0
+offset_right = 614.0
+offset_bottom = 271.0
+scale = Vector2(0.7527525, 0.7632993)
+texture_normal = ExtResource("3_rfxq2")
+script = ExtResource("3_mmgun")
+
+[node name="ThemedTimer" parent="." unique_id=1412548751 instance=ExtResource("4_h684j")]
+
+[connection signal="pressed" from="Button_1" to="Button_1" method="_on_pressed"]
+[connection signal="pressed" from="Button_2" to="Button_2" method="_on_pressed"]
+[connection signal="pressed" from="Button_3" to="Button_3" method="_on_pressed"]
+[connection signal="pressed" from="Button_4" to="Button_4" method="_on_pressed"]

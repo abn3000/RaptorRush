@@ -5,7 +5,7 @@
 [node name="Node2D" type="Node2D" unique_id=1230663064]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1355682494]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 853.0
+offset_bottom = 360.0
 scale = Vector2(1.3600004, 1.8000004)
 texture = ExtResource("1_85ujs")

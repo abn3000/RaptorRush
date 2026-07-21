@@ -1,11 +1,73 @@
 [gd_scene format=3 uid="uid://dg611ynxdgu8y"]
 
-[ext_resource type="Texture2D" uid="uid://l6f7kvynej0o" path="res://Backdrops/level.jpeg" id="1_rol8n"]
+[ext_resource type="Script" uid="uid://cjmef1rufhvtg" path="res://Scripts/level_scene.gd" id="1_c7xwe"]
+[ext_resource type="Texture2D" uid="uid://i86igkn2ledm" path="res://Backdrops/level.png" id="1_rol8n"]
+[ext_resource type="Texture2D" uid="uid://cihc7fb2rab1e" path="res://Sprites/feather-fotor-bg-remover-20260719181421.png" id="2_cn3xy"]
 
 [node name="Node2D" type="Node2D" unique_id=273287856]
+script = ExtResource("1_c7xwe")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1212976110]
 offset_right = 40.0
 offset_bottom = 40.0
-scale = Vector2(0.60000014, 0.60000014)
+scale = Vector2(6.400002, 6.5999985)
 texture = ExtResource("1_rol8n")
+
+[node name="FeatherContainer" type="HBoxContainer" parent="." unique_id=83653733]
+offset_left = 183.00002
+offset_top = 90.0
+offset_right = 3464.0
+offset_bottom = 1070.0
+scale = Vector2(0.22906671, 0.18146738)
+
+[node name="Feather1" type="TextureRect" parent="FeatherContainer" unique_id=1451402813]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Feather2" type="TextureRect" parent="FeatherContainer" unique_id=1529087803]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Feather3" type="TextureRect" parent="FeatherContainer" unique_id=905412781]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Feather4" type="TextureRect" parent="FeatherContainer" unique_id=755765994]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Feather5" type="TextureRect" parent="FeatherContainer" unique_id=1844353597]
+layout_mode = 2
+texture = ExtResource("2_cn3xy")
+
+[node name="Text" type="VBoxContainer" parent="." unique_id=504887969]
+offset_left = 454.0
+offset_top = 300.0
+offset_right = 674.0
+offset_bottom = 587.0
+size_flags_vertical = 3
+theme_override_constants/separation = 40
+
+[node name="Level" type="RichTextLabel" parent="Text" unique_id=648270007]
+layout_mode = 2
+theme_override_colors/default_color = Color(0.7882353, 0.63529414, 0.15294118, 1)
+theme_override_font_sizes/normal_font_size = 50
+text = "Level # "
+fit_content = true
+horizontal_alignment = 1
+
+[node name="Action" type="RichTextLabel" parent="Text" unique_id=1372321423]
+layout_mode = 2
+theme_override_colors/default_color = Color(0.7882353, 0.63529414, 0.15294118, 1)
+theme_override_font_sizes/normal_font_size = 50
+text = "Action"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="Timer" type="RichTextLabel" parent="Text" unique_id=1736431714]
+layout_mode = 2
+theme_override_colors/default_color = Color(0.7882353, 0.63529414, 0.15294118, 1)
+theme_override_font_sizes/normal_font_size = 50
+text = "0.0"
+fit_content = true
+horizontal_alignment = 1

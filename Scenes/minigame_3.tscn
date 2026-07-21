@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://r0s5ehp7six5"]
+
+[ext_resource type="Texture2D" uid="uid://etxy7x7xdltn" path="res://Backdrops/platformer.jpg" id="1_asmx3"]
+
+[node name="minigame_3" type="Node2D" unique_id=927492977]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1258814516]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="Parallax2D" unique_id=1681823609]
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.60000026, 0.60000026)
+texture = ExtResource("1_asmx3")
