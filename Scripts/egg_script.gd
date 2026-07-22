@@ -8,5 +8,5 @@ signal egg_collected
 # This listens for collisions automatically without looking for hardcoded paths!
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if self.visible:
-		egg_collected.emit() # Tell minigame 1 to update score
-		self.hide()          # Make the egg vanish from sight
+		egg_collected.emit() 
+		self.hide()          

@@ -6,17 +6,17 @@
 script = ExtResource("1_moll0")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=657305241]
-offset_left = 1071.0
+offset_left = 1057.0
 offset_top = 3.0
-offset_right = 1114.3899
+offset_right = 1100.3899
 offset_bottom = 43.0
-scale = Vector2(1.7999998, 1.4799997)
+scale = Vector2(2.12, 1.4799997)
 color = Color(0, 0, 0, 1)
 
 [node name="timer" type="RichTextLabel" parent="." unique_id=136145013]
-offset_left = 1077.0001
+offset_left = 1063.0001
 offset_top = 3.0
-offset_right = 1180.0001
+offset_right = 1166.0001
 offset_bottom = 62.0
 theme_override_colors/default_color = Color(0.42352942, 0.78431374, 0.6, 1)
 theme_override_font_sizes/normal_font_size = 40

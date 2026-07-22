@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bnk30y04p4fyf"]
+
+[ext_resource type="Script" uid="uid://hff1e0nbgwie" path="res://Scripts/catch.gd" id="1_3fp5r"]
+[ext_resource type="Texture2D" uid="uid://bvefjklkcsy8g" path="res://Sprites/dinocatch.png" id="2_3fp5r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g67ur"]
+radius = 87.029785
+
+[node name="Catch" type="CharacterBody2D" unique_id=147833100]
+script = ExtResource("1_3fp5r")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1613597828]
+scale = Vector2(0.3889117, 0.25926444)
+texture = ExtResource("2_3fp5r")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=144899629]
+position = Vector2(3, -2)
+scale = Vector2(1.05748, 0.6818835)
+shape = SubResource("CircleShape2D_g67ur")
+
+[node name="CatchZone" type="Area2D" parent="." unique_id=1105512980]
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="CatchZone" unique_id=1566384459]
+position = Vector2(60, -31.999998)
+scale = Vector2(0.28999716, -0.08333528)
+shape = SubResource("CircleShape2D_g67ur")

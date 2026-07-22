@@ -1,8 +1,15 @@
 [gd_scene format=3 uid="uid://r0s5ehp7six5"]
 
 [ext_resource type="Texture2D" uid="uid://etxy7x7xdltn" path="res://Backdrops/platformer.jpg" id="1_asmx3"]
+[ext_resource type="Script" uid="uid://mo6e3awa4rtl" path="res://Scripts/minigame_3.gd" id="1_rpf30"]
+[ext_resource type="PackedScene" uid="uid://bnk30y04p4fyf" path="res://Scenes/catch.tscn" id="2_rpf30"]
+[ext_resource type="PackedScene" uid="uid://khaugr8s4trv" path="res://Scenes/themed_timer.tscn" id="8_y6mal"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1kvof"]
+size = Vector2(136.09435, 21.363617)
 
 [node name="minigame_3" type="Node2D" unique_id=927492977]
+script = ExtResource("1_rpf30")
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1258814516]
 repeat_size = Vector2(1000, 0)
@@ -13,3 +20,27 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 scale = Vector2(0.60000026, 0.60000026)
 texture = ExtResource("1_asmx3")
+
+[node name="Catch" parent="." unique_id=147833100 instance=ExtResource("2_rpf30")]
+position = Vector2(540, 558)
+
+[node name="Platform 1" type="StaticBody2D" parent="." unique_id=2006083363]
+position = Vector2(-224, 472)
+scale = Vector2(2.5600004, 1)
+
+[node name="ColorRect" type="ColorRect" parent="Platform 1" unique_id=1534726589]
+offset_left = 86.32811
+offset_top = 139.0
+offset_right = 271.3946
+offset_bottom = 192.0
+scale = Vector2(2.4400012, 0.7200018)
+color = Color(0.81395525, 0.62911046, 0.37565094, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform 1" unique_id=1787725111]
+position = Vector2(311.9739, 158)
+scale = Vector2(3.3200006, 1.7600029)
+shape = SubResource("RectangleShape2D_1kvof")
+debug_color = Color(1, 0.023529412, 0.023529412, 1)
+
+[node name="ThemedTimer" parent="." unique_id=1412548751 instance=ExtResource("8_y6mal")]
+position = Vector2(-2, 6)

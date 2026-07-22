@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c5xdg04ddulgl"]
+
+[ext_resource type="Script" uid="uid://csin3q76ry0qf" path="res://Scripts/droppables.gd" id="1_1iuog"]
+[ext_resource type="Texture2D" uid="uid://d2xs5y2ok8a8v" path="res://Sprites/egg.png" id="2_85tk0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7u6rh"]
+
+[node name="Egg" type="Node2D" unique_id=934400975]
+script = ExtResource("1_1iuog")
+
+[node name="Item" type="TextureRect" parent="." unique_id=1064127724]
+offset_right = 512.0
+offset_bottom = 512.00024
+scale = Vector2(0.11999992, 0.12000015)
+texture = ExtResource("2_85tk0")
+
+[node name="Area2D" type="Area2D" parent="Item" unique_id=1553117873]
+position = Vector2(-3791.6692, -4505.6084)
+scale = Vector2(8.333339, 8.3333235)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Item/Area2D" unique_id=1906456766]
+position = Vector2(485, 572)
+scale = Vector2(2.2000024, 2.7599974)
+shape = SubResource("CircleShape2D_7u6rh")
+
+[connection signal="area_entered" from="Item/Area2D" to="." method="_on_area_2d_area_entered"]

@@ -48,6 +48,8 @@ func _process(delta: float) -> void:
 		action.text = "Collect!"
 	elif Global.minigames_done == 1:
 		action.text = "Click!"
+	elif Global.minigames_done == 2:
+		action.text = "Catch!"
 	
 
 
