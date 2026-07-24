@@ -34,6 +34,7 @@ func spawn_random_item() -> void:
 	var choice = randi_range(1, 4)
 	var new_item
 	
+	# Basically just make a new item from the scenes for each
 	if choice == 1: new_item = egg_scene.instantiate()
 	elif choice == 2: new_item = bone_scene.instantiate()
 	elif choice == 3: new_item = turtle_scene.instantiate()
@@ -54,7 +55,7 @@ func spawn_random_item() -> void:
 func item_caught() -> void:
 	score += 1
 	print("Caught: ", score)
-	caught.text = "Items Caught: " + str(score) + "/10"
+	caught.text = "Caught: " + str(score) + "/10"
 	if score >= 10:
 				if Global.minigames_done == 3:
 					GlobalMusic.stream_paused = true
