@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d21ugu88vfk6e"
+path="res://.godot/imported/Final Fantasy VII - Victory Fanfare [HD] - PadookieBruh (128k).mp3-a23cbdeb9d8a04691d8da1c62dbfff2f.mp3str"
+
+[deps]
+
+source_file="res://Sprites/Final Fantasy VII - Victory Fanfare [HD] - PadookieBruh (128k).mp3"
+dest_files=["res://.godot/imported/Final Fantasy VII - Victory Fanfare [HD] - PadookieBruh (128k).mp3-a23cbdeb9d8a04691d8da1c62dbfff2f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c53wg634vbxe6"]
+
+[ext_resource type="AudioStream" uid="uid://lct2qqvvwtfx" path="res://Sprites/WarioWare.Inc - Super Smash Bros. Ultimate Soundtrack - NekoPunchi 𝘑𝘰𝘬𝘦𝘳𝘔𝘪𝘭𝘦𝘴27 ツ 3 (128k) (mp3cut.net).mp3" id="1_jmqbo"]
+
+[node name="GlobalMusic" type="AudioStreamPlayer2D" unique_id=1336296268]
+stream = ExtResource("1_jmqbo")
+autoplay = true

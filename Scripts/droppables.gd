@@ -22,13 +22,25 @@ func _process(delta: float) -> void:
 # Triggered when an object collides with the player's CatchZone
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if self.visible:
-		# Check if the item landed flat inside your CatchZone bucket
+		# Checking bucket
 		if area.name == "CatchZone":
 			if is_meteor:
+				# The monitoring thing prevents double hits
 				self_area.set_deferred("monitoring", false)
 				self_area.set_deferred("monitorable", false)
-				hit_by_meteor.emit() # Caught a hazard!
+				hit_by_meteor.emit()
 			else:
-				drop_collected.emit() # Caught a scoring item!
-				
-			self.hide() # Turn invisible instantly on contact
+				# Nice catch
+				drop_collected.emit()
+			self.hide()
+
+		# Checking body
+		elif area.name == "Hurtbox":
+			if is_meteor:
+				# Meteors still affect the body, but items dont get caught. Life's not fair.
+				self_area.set_deferred("monitoring", false)
+				self_area.set_deferred("monitorable", false)
+				hit_by_meteor.emit()
+				self.hide()
+			else:
+				pass

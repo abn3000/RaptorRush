@@ -1,3 +1,59 @@
 [gd_scene format=3 uid="uid://d07hedrwa7wd6"]
 
+[ext_resource type="Texture2D" uid="uid://cqq0hq2n3qrh" path="res://Sprites/dust.webp" id="1_amiou"]
+[ext_resource type="Texture2D" uid="uid://bwkdblocra7e6" path="res://Sprites/defeat (1).png" id="2_vb6s7"]
+[ext_resource type="Texture2D" uid="uid://d10jsp8i4ioqj" path="res://Sprites/door.png" id="3_tpvs2"]
+[ext_resource type="Script" uid="uid://bokh5mnjhuupw" path="res://Scripts/back_to_title.gd" id="4_l3qio"]
+[ext_resource type="AudioStream" uid="uid://c1tnm06qdtmq2" path="res://Sprites/Final Fantasy 7 Game over theme - ThatRandomDude (128k) (mp3cut.net).mp3" id="5_vb6s7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dmfwj"]
+bg_color = Color(0.8901961, 0.05882353, 0.20784314, 1)
+
 [node name="death_screen" type="Node2D" unique_id=420679081]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1952782324]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(2.4631424, 2.4851427)
+texture = ExtResource("1_amiou")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=767997020]
+offset_left = 12.0
+offset_top = 251.0
+offset_right = 402.0
+offset_bottom = 447.0
+scale = Vector2(1.477231, 1.6453924)
+texture = ExtResource("2_vb6s7")
+
+[node name="Back to Title" type="Button" parent="." unique_id=780322176]
+offset_left = 565.0
+offset_top = 503.0
+offset_right = 1065.0
+offset_bottom = 623.0
+theme_override_colors/font_color = Color(0, 0.8117647, 0.3882353, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_dmfwj")
+text = "Back to Title"
+icon = ExtResource("3_tpvs2")
+expand_icon = true
+script = ExtResource("4_l3qio")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1481409330]
+clip_contents = false
+offset_left = 613.0
+offset_top = 150.0
+offset_right = 1082.0
+offset_bottom = 318.0
+theme_override_colors/default_color = Color(0.9019608, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.06666667, 0.06666667, 0.15686275, 1)
+theme_override_constants/outline_size = 24
+theme_override_font_sizes/normal_font_size = 110
+text = "Defeat..."
+
+[node name="JinglePlayer" type="AudioStreamPlayer2D" parent="." unique_id=1909877633]
+stream = ExtResource("5_vb6s7")
+autoplay = true
+
+[connection signal="pressed" from="Back to Title" to="Back to Title" method="_on_pressed"]

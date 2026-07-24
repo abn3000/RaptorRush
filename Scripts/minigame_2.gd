@@ -5,14 +5,15 @@ var buttons_pressed := 0
 var timer_end = false
 
 func _ready() -> void:
-	await themed_timer.Timer(5.0)
+	await themed_timer.Timer(4.0)
 	#after this is completed...
 	timer_end = true 
 
 
 func _process(delta: float) -> void:
 	if buttons_pressed == 4:
-		if Global.minigames_done > 3:
+		if Global.minigames_done == 3:
+			GlobalMusic.stream_paused = true
 			get_tree().change_scene_to_file("res://Scenes/done_screen.tscn")
 		else:
 			get_tree().change_scene_to_file("res://Scenes/level_scene.tscn")

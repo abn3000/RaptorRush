@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c1tnm06qdtmq2"
+path="res://.godot/imported/Final Fantasy 7 Game over theme - ThatRandomDude (128k) (mp3cut.net).mp3-81b12fc077bd88d2758c83e6844d022b.mp3str"
+
+[deps]
+
+source_file="res://Sprites/Final Fantasy 7 Game over theme - ThatRandomDude (128k) (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/Final Fantasy 7 Game over theme - ThatRandomDude (128k) (mp3cut.net).mp3-81b12fc077bd88d2758c83e6844d022b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -24,3 +24,10 @@ shape = SubResource("CircleShape2D_g67ur")
 position = Vector2(60, -31.999998)
 scale = Vector2(0.28999716, -0.08333528)
 shape = SubResource("CircleShape2D_g67ur")
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=1036247269]
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Hurtbox" unique_id=97869410]
+position = Vector2(3, -2)
+scale = Vector2(1.05748, 0.6818835)
+shape = SubResource("CircleShape2D_g67ur")

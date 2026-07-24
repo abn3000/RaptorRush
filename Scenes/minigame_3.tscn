@@ -44,3 +44,13 @@ debug_color = Color(1, 0.023529412, 0.023529412, 1)
 
 [node name="ThemedTimer" parent="." unique_id=1412548751 instance=ExtResource("8_y6mal")]
 position = Vector2(-2, 6)
+
+[node name="Caught" type="RichTextLabel" parent="." unique_id=1088437310]
+offset_left = 56.0
+offset_top = 23.0
+offset_right = 263.0
+offset_bottom = 114.0
+theme_override_colors/default_color = Color(1, 0, 0.07058824, 1)
+theme_override_font_sizes/normal_font_size = 30
+text = "Caught: 0/10
+"

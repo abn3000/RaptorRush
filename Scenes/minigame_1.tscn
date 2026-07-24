@@ -99,7 +99,7 @@ shape = SubResource("RectangleShape2D_g67ur")
 debug_color = Color(1, 0.023529412, 0.023529412, 1)
 
 [node name="Platform 3" type="StaticBody2D" parent="." unique_id=2060215976]
-position = Vector2(569, 119.99999)
+position = Vector2(586, 119.99999)
 scale = Vector2(0.11999926, 1.760001)
 
 [node name="ColorRect" type="ColorRect" parent="Platform 3" unique_id=954641138]
@@ -117,7 +117,7 @@ shape = SubResource("RectangleShape2D_g67ur")
 debug_color = Color(1, 0.023529412, 0.023529412, 1)
 
 [node name="Platform 4" type="StaticBody2D" parent="." unique_id=2116609801]
-position = Vector2(126, 205)
+position = Vector2(143, 205)
 scale = Vector2(0.5199991, 0.55999964)
 
 [node name="ColorRect" type="ColorRect" parent="Platform 4" unique_id=1757963279]
@@ -187,7 +187,7 @@ libraries/ = SubResource("AnimationLibrary_jmcek")
 autoplay = &"floating"
 
 [node name="Egg3" type="Node2D" parent="." unique_id=742595499]
-position = Vector2(123, -241)
+position = Vector2(141, -241)
 script = ExtResource("4_5txvl")
 
 [node name="Egg" type="TextureRect" parent="Egg3" unique_id=1689693711]
@@ -212,7 +212,7 @@ libraries/ = SubResource("AnimationLibrary_jmcek")
 autoplay = &"floating"
 
 [node name="Egg4" type="Node2D" parent="." unique_id=501821225]
-position = Vector2(-292, -321)
+position = Vector2(-261, -321)
 script = ExtResource("4_5txvl")
 
 [node name="Egg" type="TextureRect" parent="Egg4" unique_id=1336925475]

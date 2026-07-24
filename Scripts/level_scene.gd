@@ -13,16 +13,22 @@ var time
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	await Timer(5.0)
+	if Global.lives <= 0:
+		Global.lives = 5
+		Global.minigames_done = 0
+		GlobalMusic.stream_paused = true
+		get_tree().call_deferred("change_scene_to_file", "res://Scenes/death_screen.tscn")
+
+	await Timer(3.0)
 	
 	if Global.minigames_done < 3:
-		Global.minigames_done = Global.minigames_done +1
+		Global.minigames_done = Global.minigames_done + 1
 		get_tree().change_scene_to_file("res://Scenes/minigame_" + str(Global.minigames_done) + ".tscn")
-	
 	else:
 		get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
+# Called every frame. 
 func _process(delta: float) -> void:
 	match Global.lives:
 		4:

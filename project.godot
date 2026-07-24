@@ -18,6 +18,7 @@ config/icon="res://Sprites/icon.svg"
 [autoload]
 
 Global="*uid://tdd4eq5k207b"
+GlobalMusic="*uid://c53wg634vbxe6"
 
 [display]
 

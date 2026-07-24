@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://lct2qqvvwtfx"
+path="res://.godot/imported/WarioWare.Inc - Super Smash Bros. Ultimate Soundtrack - NekoPunchi 𝘑𝘰𝘬𝘦𝘳𝘔𝘪𝘭𝘦𝘴27 ツ 3 (128k) (mp3cut.net).mp3-fb9ec9a386b1a97fa21c689ac61ccd39.mp3str"
+
+[deps]
+
+source_file="res://Sprites/WarioWare.Inc - Super Smash Bros. Ultimate Soundtrack - NekoPunchi 𝘑𝘰𝘬𝘦𝘳𝘔𝘪𝘭𝘦𝘴27 ツ 3 (128k) (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/WarioWare.Inc - Super Smash Bros. Ultimate Soundtrack - NekoPunchi 𝘑𝘰𝘬𝘦𝘳𝘔𝘪𝘭𝘦𝘴27 ツ 3 (128k) (mp3cut.net).mp3-fb9ec9a386b1a97fa21c689ac61ccd39.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

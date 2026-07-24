@@ -7,6 +7,8 @@ extends Node2D
 @onready var bone_scene = preload("res://Scenes/bone.tscn")
 @onready var turtle_scene = preload("res://Scenes/turtle.tscn")
 @onready var meteor_scene = preload("res://Scenes/meteor.tscn")
+@onready var caught: RichTextLabel = $Caught
+
 
 var score = 0
 var timer_end = false
@@ -16,7 +18,7 @@ func _ready() -> void:
 	start_spawner_loop()
 	
 	# Timer setup
-	await themed_timer.Timer(20.0)
+	await themed_timer.Timer(17.0)
 	timer_end = true
 	check_end_conditions()
 
@@ -51,22 +53,26 @@ func spawn_random_item() -> void:
 # Triggered when an egg, bone, or turtle is caught successfully
 func item_caught() -> void:
 	score += 1
-	print("Items Caught: ", score)
+	print("Caught: ", score)
+	caught.text = "Items Caught: " + str(score) + "/10"
 	if score >= 10:
 				if Global.minigames_done == 3:
-					get_tree().change_scene_to_file("res://Scenes/done_screen.tscn")
+					GlobalMusic.stream_paused = true
+					get_tree().call_deferred("change_scene_to_file", "res://Scenes/done_screen.tscn")
+					
 				else:
-					get_tree().change_scene_to_file("res://Scenes/level_scene.tscn")
+					get_tree().call_deferred("change_scene_to_file", "res://Scenes/level_scene.tscn")
 
-# Triggered when a meteor hits the bucket
+# Triggered when a meteor hits
 func player_hit() -> void:
 	Global.lives -= 1
-	# Lose! Instantly return to intermission scene
-	get_tree().change_scene_to_file("res://Scenes/level_scene.tscn")
+	Global.minigames_done -= 1
+	# Lose! 
+	get_tree().call_deferred("change_scene_to_file", "res://Scenes/level_scene.tscn")
 
-# Triggered if the 15-second timer runs out before hitting a score of 7
+# When time runs out
 func check_end_conditions() -> void:
 	if score < 10:
 		Global.lives -= 1
 		Global.minigames_done -= 1
-		get_tree().change_scene_to_file("res://Scenes/level_scene.tscn")
+		get_tree().call_deferred("change_scene_to_file", "res://Scenes/level_scene.tscn")
