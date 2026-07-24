@@ -23,6 +23,7 @@ RaptorRush was made in Godot, as part of a Stardance mission to create a WarioWa
 
 
 ***Acknowledgements***
+
 Images sourced from online image libraries. Music sourced from Super Smash Bros. and Final Fantasy 7, uploaded to Youtube. Google's NanoBanana used for upscaling velociraptor sprites.
 
 
