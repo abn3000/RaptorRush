@@ -4,7 +4,9 @@ RaptorRush is a fast-paced, 2D minigame collection that tests your reflexes in t
 <img width="1152" height="649" alt="image" src="https://github.com/user-attachments/assets/943098db-26c2-49ec-9240-305bf49ab536" />
 
 
+
 **Demo Link (try it!):** https://roaringdino3000.itch.io/raptorrush
+
 
 
 ***Key Features***
@@ -16,10 +18,12 @@ RaptorRush is a fast-paced, 2D minigame collection that tests your reflexes in t
 - Simple settings
 
 
+
 ***The Process***
 <img width="1152" height="645" alt="image" src="https://github.com/user-attachments/assets/c5128aed-f106-45de-a85b-2bd83c9fd663" />
 
 RaptorRush was made in Godot, as part of a Stardance mission to create a WarioWare game. I used scripts and signals to set up timers, adjust lives, and even make falling items.
+
 
 
 ***Acknowledgements***
